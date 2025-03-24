@@ -1,3 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+--Green-500: hsl(158, 36%, 37%);
+--Green-700: hsl(158, 42%, 18%);
+--Black: hsl(212, 21%, 14%);
+--Grey: hsl(228, 12%, 48%);
+--Cream: hsl(30, 38%, 92%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Cream);
+    font-family: "Fraunces", serif;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    margin-inline:auto;
+    border-radius: 10px;
+    height: fit-content;
+    width: 610px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper picture{
+    width: 50%;
+    img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    }
+}
+.info{
+    background-color: var(--White);
+    padding:1.5rem;
+    width: 50%;
+    border-radius: 0 10px 10px 0    ;
+}
+.info > p{
+    color: var(--Grey);
+    margin-bottom: 1rem;
+    font-family:"Montserrat", sans-serif;
+    line-height: 1.5;
+}
+.info > p:first-child{
+    letter-spacing: 2px;
+}
+.info > h1{
+    margin-bottom: 1rem;
+    font-size: 40px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0.75rem;
+}
+.price > h1{
+    font-size: 32px;
+    color: var(--Green-500);
+}
+.price > strike{
+    color: var(--Grey);
+}
+button{
+    width: 100%;
+    background-color: var(--Green-500);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+button:active{
+    background-color: var(--Green-700);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
