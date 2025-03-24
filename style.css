@@ -38,6 +38,7 @@ main{
     width: 610px;
     display: flex;
     justify-content: center;
+    box-shadow:4px 4px 10px 8px #d3d3d359;
 }
 
 .wrapper picture{
