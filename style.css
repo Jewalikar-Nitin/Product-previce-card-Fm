@@ -78,8 +78,9 @@ main{
     font-size: 32px;
     color: var(--Green-500);
 }
-.price > strike{
+.price > p{
     color: var(--Grey);
+    text-decoration: line-through;
 }
 button{
     width: 100%;
